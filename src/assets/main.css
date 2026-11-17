@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-second-manrope: 'Manrope', sans-serif;
+
+  /* Green */
+  --color-green-400: #63c995;
+  --color-green-500: #18a058;
+  --color-black-rgb: rgb(16, 16, 20);
+
+  /* Dark */
+  --color-dark: #1e1e1e;
+  --color-gray-dark: #2c2c2c;
+
+  /* White */
+  --color-white: #ffffff;
+
+  /* Hover */
+  --color-green-400-hover: #4fba83;
+  --color-green-500-hover: #128047;
+
+  /* Gradient */
+  --gradient-green: linear-gradient(91deg, var(--color-green-400) 0%, var(--color-green-500) 100%);
+}
+
+:root {
+  --color-background: #ffffff;
+  --color-background-secondary: #f7f7f7;
+  --color-gray-dark: #ffffff;
+
+  --color-text-primary: #1e1e1e;
+  --color-text-secondary: rgba(30, 30, 30, 0.5);
+
+  --color--line: rgba(44, 44, 44, 0.1);
+  --color-link: rgba(44, 44, 44, 0.2);
+}
+
+.dark {
+  --color-background: #1e1e1e;
+  --color-background-secondary: #2c2c2c;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.5);
+
+  --color-text-line: rgba(255, 255, 255, 0.1);
+  --color-text-link: rgba(255, 255, 255, 0.2);
+}
+
+.m-slider-container .n-layout-scroll-container .n-layout-toggle-button {
+  right: 6px !important;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}

@@ -1,0 +1,22 @@
+import { ref } from 'vue'
+
+export const useModal = () => {
+  const isOpen = ref(false)
+
+  const openModal = () => {
+    isOpen.value = true
+  }
+  const closedModal = () => {
+    isOpen.value = false
+  }
+  const toggleModal = () => {
+    isOpen.value = !isOpen.value
+  }
+
+  return {
+    isOpen,
+    openModal,
+    closedModal,
+    toggleModal,
+  }
+}
