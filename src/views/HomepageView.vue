@@ -21,7 +21,7 @@ const emit = defineEmits(['theme-changed'])
 // function renderIcon(icon: Component) {
 //   return () => h(NIcon, null, { default: () => h(icon) })
 // }
-
+// tedwsdsa
 function renderIcon(src: string) {
   return () =>
     h(NIcon, null, {
